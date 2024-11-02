@@ -1,0 +1,45 @@
+.mySwiper {
+  width: 100%;
+  max-width: 800px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.swiper-slide {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slide-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.quote {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.quote p {
+  font-style: italic;
+  margin: 0;
+}
+
+.quote span {
+  display: block;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
