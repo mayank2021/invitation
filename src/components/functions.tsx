@@ -1,6 +1,16 @@
 import React from "react";
 
-const Card = ({ bg, color, title, img }: any) => (
+const Card = ({
+  bg,
+  color,
+  title,
+  img,
+}: {
+  bg: string;
+  color: string;
+  title: string;
+  img: string;
+}) => (
   <div
     className={`${bg} w-full flex flex-col justify-center items-center gap-5 pt-10 pb-12`}
   >

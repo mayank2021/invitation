@@ -35,7 +35,7 @@ const CountdownTimer = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const TimeUnit = ({ value, label }) => (
+  const TimeUnit = ({ value, label }: { value: number; label: string }) => (
     <div className="relative group">
       <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-rose-200 blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
       <div className="relative bg-white/80 backdrop-blur rounded-2xl overflow-hidden border border-rose-100">

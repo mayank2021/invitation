@@ -2,6 +2,13 @@
 
 import React from "react";
 import { Clock, MapPin, CalendarDays } from "lucide-react";
+interface FunctionProps {
+  name: string;
+  tagline: string;
+  date: string;
+  time: string;
+  place: string;
+}
 
 const WeddingFunctions = () => {
   const functions = [
@@ -28,7 +35,13 @@ const WeddingFunctions = () => {
     },
   ];
 
-  const FunctionCard = ({ func, isLast }) => (
+  const FunctionCard = ({
+    func,
+    isLast,
+  }: {
+    func: FunctionProps;
+    isLast: boolean;
+  }) => (
     <div className={`relative ${!isLast ? "pb-8" : ""}`}>
       {/* Connecting Line */}
       {!isLast && (
@@ -39,7 +52,9 @@ const WeddingFunctions = () => {
         {/* Function Name and Tagline */}
         <div className="mb-4">
           <h3 className="text-xl font-medium text-gray-800">{func.name}</h3>
-          <p className="text-rose-500 italic mt-1">"{func.tagline}"</p>
+          <p className="text-rose-500 italic mt-1">
+            &quot;{func.tagline}&quot;
+          </p>
         </div>
 
         {/* Date & Time */}

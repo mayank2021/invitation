@@ -19,7 +19,7 @@ const ContactCard = () => {
     },
   ];
 
-  const ContactPerson = ({ name, phone }) => (
+  const ContactPerson = ({ name, phone }: { name: string; phone: string }) => (
     <div className="flex items-center justify-between px-6 py-4 hover:bg-rose-50/50 transition-colors">
       <span className="text-gray-800 font-medium">{name}</span>
       <div className="flex items-center gap-2 text-gray-700">

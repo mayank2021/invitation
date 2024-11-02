@@ -1,6 +1,14 @@
 import React from "react";
 
-const Card = ({ title, img, name }: any) => {
+const Card = ({
+  title,
+  img,
+  name,
+}: {
+  title: string;
+  img: string;
+  name: string;
+}) => {
   return (
     <div className="flex flex-col items-center max-w-sm mx-auto p-4">
       <h2 className="uppercase text-xl font-semibold text-[#BF4E69] mb-4 after:content-[''] after:block after:w-full after:h-[1px] after:bg-[#BF4E69] after:mt-1">
