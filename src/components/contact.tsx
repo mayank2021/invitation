@@ -7,14 +7,14 @@ const ContactCard = () => {
   const contacts = [
     {
       name: "Manish",
-      phone: "+91 6756456756",
+      phone: "+91 9999030271",
     },
     {
       name: "Amit",
-      phone: "+91 8859167328",
+      phone: "+91 9760275867",
     },
     {
-      name: "Mayank(Riya's Pati)",
+      name: "Mayank",
       phone: "+91 8859167328",
     },
   ];
